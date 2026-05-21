@@ -1,0 +1,2 @@
+venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8001 --reload for backend
+php -S localhost:8000 for frontenddir

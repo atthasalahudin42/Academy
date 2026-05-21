@@ -1,0 +1,11 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Exclude API, templates, backend, assets from rewrite
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteCond %{REQUEST_URI} !^/templates/
+RewriteCond %{REQUEST_URI} !^/backend/
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?/$1 [L,QSA]

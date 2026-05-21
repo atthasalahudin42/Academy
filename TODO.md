@@ -1,0 +1,1 @@
+# Fix AI Server Connection Failed\n\n## Steps\n- [x] 1. Secure API key in python_ai/app.py (env var)\n- [x] 2. Secure API key in api/ask_ai.py (env var) \n- [x] 3. Start python_ai FastAPI server (uvicorn, persistent)\n- [ ] 4. Test server health (curl localhost:8000)\n- [ ] 5. Test full AI chat flow\n- [ ] 6. Complete
