@@ -1,2 +1,25 @@
-venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8001 --reload for backend
-php -S localhost:8000 for frontenddir
+# --- STARTUP COMMANDS ---
+
+Run Backend (FastAPI):
+venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8001 --reload
+
+Run Frontend (PHP):
+php -S localhost:8000
+
+
+# --- TESTING COMMANDS ---
+
+Run All Tests (PHP & Python):
+.\run_tests.bat
+
+Run PHP Unit Tests:
+.\vendor\bin\phpunit
+
+Run Python Unit & E2E Tests:
+.\venv\Scripts\python.exe -m pytest
+
+Run Specific PHP Test:
+.\vendor\bin\phpunit tests/php/DatabaseTest.php
+
+Run Specific Python E2E Test:
+.\venv\Scripts\python.exe -m pytest tests/e2e/test_auth_flow.py
