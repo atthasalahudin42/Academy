@@ -1,0 +1,28 @@
+# PHP Dependencies
+/vendor/
+
+# Python Virtual Environments
+/venv/
+/myenv/
+
+# Python caching & logs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# PHPUnit cache
+.phpunit.cache/
+
+# Local databases
+*.db
+
+# Local environment configs
+.env
+backend/.env
+
+# Temporary / test output files
+cookies.txt
+test_write.txt
+error'
